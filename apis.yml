@@ -2,7 +2,7 @@ name: Microsoft 365 Copilot
 description: Microsoft 365 Copilot is an AI-powered productivity tool that combines large language models (LLMs) with Microsoft 365 apps and business data to enhance creativity, productivity, and skills across Microsoft 365 applications.
 image: https://www.microsoft.com/en-us/microsoft-365/copilot/copilot-logo.png
 created: '2024-01-15'
-modified: '2026-03-16'
+modified: '2026-04-28'
 specificationVersion: '0.18'
 url: https://www.microsoft.com/en-us/microsoft-365/copilot/apis.json
 apis:
