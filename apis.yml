@@ -92,6 +92,8 @@ apis:
       - type: Models
         url: https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/showcase/copilot-for-microsoft-365
   - type: Portal
     url: https://portal.azure.com/
   - type: Developer Portal
