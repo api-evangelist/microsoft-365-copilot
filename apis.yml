@@ -44,7 +44,7 @@ apis:
         url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started
       - type: Plugin Development
         url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/copilot-plugins-overview
-      - type: Connectors
+      - type: Integrations
         url: https://learn.microsoft.com/en-us/connectors/
       - type: Tutorials
         url: https://learn.microsoft.com/en-us/microsoft-copilot-studio/tutorials
@@ -85,7 +85,7 @@ apis:
         url: https://learn.microsoft.com/en-us/azure/ai-services/openai/
       - type: APIReference
         url: https://learn.microsoft.com/en-us/azure/ai-services/openai/reference
-      - type: Quickstart
+      - type: GettingStarted
         url: https://learn.microsoft.com/en-us/azure/ai-services/openai/quickstart
       - type: Pricing
         url: https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/
@@ -96,7 +96,7 @@ common:
     url: https://www.linkedin.com/showcase/copilot-for-microsoft-365
   - type: Portal
     url: https://portal.azure.com/
-  - type: Developer Portal
+  - type: DeveloperPortal
     url: https://developer.microsoft.com/
   - type: TermsOfService
     url: https://www.microsoft.com/en-us/legal/terms-of-use
@@ -114,7 +114,7 @@ common:
     url: https://www.microsoft.com/en-us/marketplace
   - name: Agent Skills
     url: https://github.com/microsoft/skills-for-copilot-studio
-    type: AgentSkill
+    type: AgentSkills
 integrations:
   - name: Microsoft
   - name: Two people looking at a computer.
