@@ -92,6 +92,10 @@ apis:
       - type: Models
         url: https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models
 common:
+  - type: DomainSecurity
+    url: security/microsoft-365-copilot-domain-security.yml
+  - type: Authentication
+    url: authentication/microsoft-365-copilot-authentication.yml
   - type: OAuthScopes
     url: scopes/microsoft-365-copilot-scopes.yml
   - type: LinkedIn
