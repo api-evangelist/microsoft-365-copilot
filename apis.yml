@@ -92,6 +92,8 @@ apis:
       - type: Models
         url: https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models
 common:
+  - type: AgenticAccess
+    url: agentic-access/microsoft-365-copilot-agentic-access.yml
   - type: DomainSecurity
     url: security/microsoft-365-copilot-domain-security.yml
   - type: Authentication
