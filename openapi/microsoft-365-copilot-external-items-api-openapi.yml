@@ -1,0 +1,84 @@
+openapi: 3.1.0
+info:
+  title: Microsoft 365 Copilot (Microsoft Graph) Connectors External Items API
+  description: 'Microsoft 365 Copilot is built on Microsoft Graph and external content
+
+    ingestion via Microsoft 365 Copilot connectors (formerly Microsoft Graph
+
+    connectors). This specification covers the Copilot-related operations
+
+    exposed through the Microsoft Graph REST API at
+
+    https://graph.microsoft.com — including retrieval (user content surfaces
+
+    such as mail/events/files), Copilot connectors and external items, and
+
+    Microsoft Search query. Authentication is via Microsoft Entra ID OAuth 2.0.
+
+    '
+  version: '1.0'
+  contact:
+    name: Microsoft Graph / Copilot
+    url: https://docs.microsoft.com/en-us/graph/overview
+servers:
+- url: https://graph.microsoft.com/v1.0
+  description: Microsoft Graph v1.0
+- url: https://graph.microsoft.com/beta
+  description: Microsoft Graph beta
+security:
+- oauth2: []
+tags:
+- name: External Items
+paths:
+  /external/connections/{connection-id}/items/{item-id}:
+    parameters:
+    - in: path
+      name: connection-id
+      required: true
+      schema:
+        type: string
+    - in: path
+      name: item-id
+      required: true
+      schema:
+        type: string
+    put:
+      tags:
+      - External Items
+      summary: Create or update an external item
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Item created/updated
+    delete:
+      tags:
+      - External Items
+      summary: Delete an external item
+      responses:
+        '204':
+          description: Deleted
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: Microsoft Entra ID OAuth 2.0
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+          tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+          scopes:
+            User.Read: Sign in and read user profile
+            Mail.Read: Read user mail
+            Calendars.Read: Read user calendars
+            Files.Read.All: Read all files
+            ExternalConnection.ReadWrite.OwnedBy: Manage owned Copilot connector connections
+            ExternalItem.ReadWrite.OwnedBy: Manage owned external items
+        clientCredentials:
+          tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+          scopes:
+            https://graph.microsoft.com/.default: Use app-registered Graph permissions

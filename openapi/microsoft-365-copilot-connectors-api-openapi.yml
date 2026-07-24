@@ -1,0 +1,122 @@
+openapi: 3.1.0
+info:
+  title: Microsoft 365 Copilot (Microsoft Graph) Connectors API
+  description: 'Microsoft 365 Copilot is built on Microsoft Graph and external content
+
+    ingestion via Microsoft 365 Copilot connectors (formerly Microsoft Graph
+
+    connectors). This specification covers the Copilot-related operations
+
+    exposed through the Microsoft Graph REST API at
+
+    https://graph.microsoft.com — including retrieval (user content surfaces
+
+    such as mail/events/files), Copilot connectors and external items, and
+
+    Microsoft Search query. Authentication is via Microsoft Entra ID OAuth 2.0.
+
+    '
+  version: '1.0'
+  contact:
+    name: Microsoft Graph / Copilot
+    url: https://docs.microsoft.com/en-us/graph/overview
+servers:
+- url: https://graph.microsoft.com/v1.0
+  description: Microsoft Graph v1.0
+- url: https://graph.microsoft.com/beta
+  description: Microsoft Graph beta
+security:
+- oauth2: []
+tags:
+- name: Connectors
+paths:
+  /external/connections:
+    get:
+      tags:
+      - Connectors
+      summary: List Microsoft 365 Copilot connector connections
+      responses:
+        '200':
+          description: Connections
+    post:
+      tags:
+      - Connectors
+      summary: Create a Copilot connector connection
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: string
+                name:
+                  type: string
+                description:
+                  type: string
+      responses:
+        '201':
+          description: Connection created
+  /external/connections/{connection-id}:
+    parameters:
+    - in: path
+      name: connection-id
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Connectors
+      summary: Get a Copilot connector connection
+      responses:
+        '200':
+          description: Connection
+    delete:
+      tags:
+      - Connectors
+      summary: Delete a Copilot connector connection
+      responses:
+        '204':
+          description: Deleted
+  /external/connections/{connection-id}/schema:
+    parameters:
+    - in: path
+      name: connection-id
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Connectors
+      summary: Get the schema of a connection
+      responses:
+        '200':
+          description: Schema
+    patch:
+      tags:
+      - Connectors
+      summary: Update the schema of a connection
+      responses:
+        '202':
+          description: Update accepted
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: Microsoft Entra ID OAuth 2.0
+      flows:
+        authorizationCode:
+          authorizationUrl: https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+          tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+          scopes:
+            User.Read: Sign in and read user profile
+            Mail.Read: Read user mail
+            Calendars.Read: Read user calendars
+            Files.Read.All: Read all files
+            ExternalConnection.ReadWrite.OwnedBy: Manage owned Copilot connector connections
+            ExternalItem.ReadWrite.OwnedBy: Manage owned external items
+        clientCredentials:
+          tokenUrl: https://login.microsoftonline.com/common/oauth2/v2.0/token
+          scopes:
+            https://graph.microsoft.com/.default: Use app-registered Graph permissions
