@@ -1,0 +1,20 @@
+{
+  "provider": "microsoft-365-copilot",
+  "sources": [
+    "microsoft-365-copilot-connectors-api-openapi.yml",
+    "microsoft-365-copilot-external-items-api-openapi.yml",
+    "microsoft-365-copilot-search-api-openapi.yml",
+    "microsoft-365-copilot-user-content-api-openapi.yml"
+  ],
+  "outputs": [
+    "microsoft-365-copilot-connectors-api-openapi.yml",
+    "microsoft-365-copilot-external-items-api-openapi.yml",
+    "microsoft-365-copilot-search-api-openapi.yml",
+    "microsoft-365-copilot-user-content-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
