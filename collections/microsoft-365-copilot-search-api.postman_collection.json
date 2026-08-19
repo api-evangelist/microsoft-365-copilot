@@ -1,0 +1,143 @@
+{
+  "item": [
+    {
+      "id": "9cf40b83-cad9-48e9-9d54-e0a3c30a47d9",
+      "name": "Search",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "abe82fac-a55f-4213-b4c5-6280b6588dbe",
+          "name": "Issue a Microsoft Search query (drives Copilot grounding)",
+          "request": {
+            "name": "Issue a Microsoft Search query (drives Copilot grounding)",
+            "description": {},
+            "url": {
+              "path": [
+                "search",
+                "query"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"query\": {\n        \"queryString\": \"<string>\"\n      }\n    },\n    {\n      \"entityTypes\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"query\": {\n        \"queryString\": \"<string>\"\n      }\n    }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "ae797f4a-b2f5-4f7f-ba85-1b11eb61a95a",
+              "name": "Search results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "search",
+                    "query"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"requests\": [\n    {\n      \"entityTypes\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"query\": {\n        \"queryString\": \"<string>\"\n      }\n    },\n    {\n      \"entityTypes\": [\n        \"<string>\",\n        \"<string>\"\n      ],\n      \"query\": {\n        \"queryString\": \"<string>\"\n      }\n    }\n  ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://graph.microsoft.com/v1.0",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "User.Read Mail.Read Calendars.Read Files.Read.All ExternalConnection.ReadWrite.OwnedBy ExternalItem.ReadWrite.OwnedBy"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://login.microsoftonline.com/common/oauth2/v2.0/token"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "80ac4c54-93d3-4d6b-b865-5368499599e8",
+    "name": "Microsoft 365 Copilot (Microsoft Graph) Connectors Search API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Microsoft 365 Copilot is built on Microsoft Graph and external content\ningestion via Microsoft 365 Copilot connectors (formerly Microsoft Graph\nconnectors). This specification covers the Copilot-related operations\nexposed through the Microsoft Graph REST API at\nhttps://graph.microsoft.com — including retrieval (user content surfaces\nsuch as mail/events/files), Copilot connectors and external items, and\nMicrosoft Search query. Authentication is via Microsoft Entra ID OAuth 2.0.\n\n\nContact Support:\n Name: Microsoft Graph / Copilot",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Microsoft 365 Copilot (Microsoft Graph) Connectors API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "client_credentials",
+      "accessTokenUrl": "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Connectors",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Microsoft 365 Copilot connector connections",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://graph.microsoft.com/v1.0/external/connections"
+          },
+          "docs": "List Microsoft 365 Copilot connector connections"
+        },
+        {
+          "info": {
+            "name": "Create a Copilot connector connection",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://graph.microsoft.com/v1.0/external/connections",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a Copilot connector connection"
+        },
+        {
+          "info": {
+            "name": "Get a Copilot connector connection",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://graph.microsoft.com/v1.0/external/connections/:connection-id",
+            "params": [
+              {
+                "name": "connection-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a Copilot connector connection"
+        },
+        {
+          "info": {
+            "name": "Delete a Copilot connector connection",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://graph.microsoft.com/v1.0/external/connections/:connection-id",
+            "params": [
+              {
+                "name": "connection-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a Copilot connector connection"
+        },
+        {
+          "info": {
+            "name": "Get the schema of a connection",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://graph.microsoft.com/v1.0/external/connections/:connection-id/schema",
+            "params": [
+              {
+                "name": "connection-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get the schema of a connection"
+        },
+        {
+          "info": {
+            "name": "Update the schema of a connection",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://graph.microsoft.com/v1.0/external/connections/:connection-id/schema",
+            "params": [
+              {
+                "name": "connection-id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Update the schema of a connection"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

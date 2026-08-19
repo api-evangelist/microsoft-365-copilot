@@ -1,0 +1,282 @@
+{
+  "item": [
+    {
+      "id": "b77bbcb4-0068-4779-9109-a2d493dcb373",
+      "name": "External Items",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "c6f4d17a-74a8-4502-aca3-ed16eb344485",
+          "name": "Create or update an external item",
+          "request": {
+            "name": "Create or update an external item",
+            "description": {},
+            "url": {
+              "path": [
+                "external",
+                "connections",
+                ":connection-id",
+                "items",
+                ":item-id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "connection-id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "item-id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "<object>",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "bf7d2986-2a1d-4ba8-9983-e4b1ee4e5e26",
+              "name": "Item created/updated",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "external",
+                    "connections",
+                    ":connection-id",
+                    "items",
+                    ":item-id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "connection-id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "item-id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "<object>",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f7a4dd19-5010-4607-ade1-dd0cb713bc22",
+          "name": "Delete an external item",
+          "request": {
+            "name": "Delete an external item",
+            "description": {},
+            "url": {
+              "path": [
+                "external",
+                "connections",
+                ":connection-id",
+                "items",
+                ":item-id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "connection-id",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "item-id",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "31183a3a-8410-48af-80fc-0ebdbfacae14",
+              "name": "Deleted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "external",
+                    "connections",
+                    ":connection-id",
+                    "items",
+                    ":item-id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "connection-id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "item-id",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://graph.microsoft.com/v1.0",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "User.Read Mail.Read Calendars.Read Files.Read.All ExternalConnection.ReadWrite.OwnedBy ExternalItem.ReadWrite.OwnedBy"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://login.microsoftonline.com/common/oauth2/v2.0/token"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "dbd7cdca-bdb5-42d6-8ded-317e86d7de64",
+    "name": "Microsoft 365 Copilot (Microsoft Graph) Connectors External Items API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Microsoft 365 Copilot is built on Microsoft Graph and external content\ningestion via Microsoft 365 Copilot connectors (formerly Microsoft Graph\nconnectors). This specification covers the Copilot-related operations\nexposed through the Microsoft Graph REST API at\nhttps://graph.microsoft.com — including retrieval (user content surfaces\nsuch as mail/events/files), Copilot connectors and external items, and\nMicrosoft Search query. Authentication is via Microsoft Entra ID OAuth 2.0.\n\n\nContact Support:\n Name: Microsoft Graph / Copilot",
+      "type": "text/plain"
+    }
+  }
+}

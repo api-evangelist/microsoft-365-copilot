@@ -1,0 +1,323 @@
+{
+  "item": [
+    {
+      "id": "2e4c8572-e9d2-4e7c-9af4-cd40dc0201ff",
+      "name": "User Content",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "2f20a89d-4881-4137-8bce-06c59cdd3dd7",
+          "name": "Get the signed-in user's profile (Copilot grounding context)",
+          "request": {
+            "name": "Get the signed-in user's profile (Copilot grounding context)",
+            "description": {},
+            "url": {
+              "path": [
+                "me"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "90a247cc-b784-4246-9ed1-3a4482d45f69",
+              "name": "User profile",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6204ff7d-a045-4160-9f08-32c0212cebd1",
+          "name": "List the signed-in user's mail",
+          "request": {
+            "name": "List the signed-in user's mail",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "messages"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fad13b2d-e78e-46d1-89b5-65d64665814c",
+              "name": "Messages",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "messages"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8f708b4a-9cab-4f1b-af28-f3331ee52fbc",
+          "name": "List the signed-in user's calendar events",
+          "request": {
+            "name": "List the signed-in user's calendar events",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "events"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c3c69f74-7401-4789-947d-fbe6169ffe7d",
+              "name": "Events",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "events"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "dfb4f7d4-f731-4385-a5eb-f65fe6286ef7",
+          "name": "List items in the user's OneDrive root",
+          "request": {
+            "name": "List items in the user's OneDrive root",
+            "description": {},
+            "url": {
+              "path": [
+                "me",
+                "drive",
+                "root",
+                "children"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b18daf62-8a73-47cc-be10-ffc30e3e4025",
+              "name": "Drive items",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "me",
+                    "drive",
+                    "root",
+                    "children"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: oauth2",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "<token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://graph.microsoft.com/v1.0",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "oauth2",
+    "oauth2": [
+      {
+        "key": "scope",
+        "value": "User.Read Mail.Read Calendars.Read Files.Read.All ExternalConnection.ReadWrite.OwnedBy ExternalItem.ReadWrite.OwnedBy"
+      },
+      {
+        "key": "accessTokenUrl",
+        "value": "https://login.microsoftonline.com/common/oauth2/v2.0/token"
+      },
+      {
+        "key": "authUrl",
+        "value": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+      },
+      {
+        "key": "grant_type",
+        "value": "authorization_code"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "3e9a26f3-433d-46e1-b52f-fe53ca4ef163",
+    "name": "Microsoft 365 Copilot (Microsoft Graph) Connectors User Content API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Microsoft 365 Copilot is built on Microsoft Graph and external content\ningestion via Microsoft 365 Copilot connectors (formerly Microsoft Graph\nconnectors). This specification covers the Copilot-related operations\nexposed through the Microsoft Graph REST API at\nhttps://graph.microsoft.com — including retrieval (user content surfaces\nsuch as mail/events/files), Copilot connectors and external items, and\nMicrosoft Search query. Authentication is via Microsoft Entra ID OAuth 2.0.\n\n\nContact Support:\n Name: Microsoft Graph / Copilot",
+      "type": "text/plain"
+    }
+  }
+}
