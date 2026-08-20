@@ -30,6 +30,11 @@ apis:
   - AI Development
   - Automation
   - Custom Plugins
+  - Low-Code
+  tags_raw:
+  - AI Development
+  - Automation
+  - Custom Plugins
   - Low Code
   properties:
   - type: Documentation
@@ -74,6 +79,12 @@ apis:
   humanURL: https://azure.microsoft.com/en-us/products/ai-services/openai-service
   baseURL: https://{resource-name}.openai.azure.com/
   tags:
+  - Artificial Intelligence
+  - Azure
+  - GPT
+  - Language Models
+  - Machine-Learning
+  tags_raw:
   - AI
   - Azure
   - GPT
@@ -209,6 +220,14 @@ maintainers:
     email: support@microsoft.com
     url: https://www.microsoft.com/
 tags:
+  - Artificial Intelligence
+  - Copilot
+  - Enterprise
+  - LLM
+  - Microsoft-365
+  - Natural Language Processing
+  - Productivity
+tags_raw:
   - Artificial Intelligence
   - Copilot
   - Enterprise
