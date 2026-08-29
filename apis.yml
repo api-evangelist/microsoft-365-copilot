@@ -1,5 +1,17 @@
 name: Microsoft 365 Copilot
 description: Microsoft 365 Copilot is an AI-powered productivity tool that combines large language models (LLMs) with Microsoft 365 apps and business data to enhance creativity, productivity, and skills across Microsoft 365 applications.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
