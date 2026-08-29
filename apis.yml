@@ -81,7 +81,7 @@ apis:
       https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/build-message-extensions
   - type: API Plugins
     url: https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/api-plugins
-  - type: Samples
+  - type: Examples
     url: https://github.com/microsoft/copilot-plugins-samples
 - name: Azure OpenAI Service API
   description: >-
