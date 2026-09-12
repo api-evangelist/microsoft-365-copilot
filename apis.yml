@@ -186,6 +186,8 @@ apis:
   - type: ChangeLog
     url: https://developer.microsoft.com/en-us/graph/changelog
 common:
+  - type: Website
+    url: https://www.microsoft.com/
   - type: AgenticAccess
     url: agentic-access/microsoft-365-copilot-agentic-access.yml
   - type: DomainSecurity
@@ -247,3 +249,5 @@ tags_raw:
   - Microsoft 365
   - Natural Language Processing
   - Productivity
+x-parent: microsoft
+x-relationship: product
