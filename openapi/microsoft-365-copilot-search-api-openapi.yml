@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: Microsoft 365 Copilot (Microsoft Graph) Connectors Search API
+  title: Microsoft 365 Copilot (Microsoft Graph) Search API
   description: 'Microsoft 365 Copilot is built on Microsoft Graph and external content
 
     ingestion via Microsoft 365 Copilot connectors (formerly Microsoft Graph
@@ -13,9 +13,7 @@ info:
 
     such as mail/events/files), Copilot connectors and external items, and
 
-    Microsoft Search query. Authentication is via Microsoft Entra ID OAuth 2.0.
-
-    '
+    Microsoft Search query. Authentication is via Microsoft Entra ID OAuth 2.0.'
   version: '1.0'
   contact:
     name: Microsoft Graph / Copilot
@@ -59,6 +57,8 @@ paths:
       responses:
         '200':
           description: Search results
+      operationId: postSearchQuery
+      x-operation-id-source: derived
 components:
   securitySchemes:
     oauth2:

@@ -13,9 +13,7 @@ info:
 
     such as mail/events/files), Copilot connectors and external items, and
 
-    Microsoft Search query. Authentication is via Microsoft Entra ID OAuth 2.0.
-
-    '
+    Microsoft Search query. Authentication is via Microsoft Entra ID OAuth 2.0.'
   version: '1.0'
   contact:
     name: Microsoft Graph / Copilot
@@ -38,6 +36,8 @@ paths:
       responses:
         '200':
           description: Connections
+      operationId: getExternalConnections
+      x-operation-id-source: derived
     post:
       tags:
       - Connectors
@@ -58,6 +58,8 @@ paths:
       responses:
         '201':
           description: Connection created
+      operationId: postExternalConnections
+      x-operation-id-source: derived
   /external/connections/{connection-id}:
     parameters:
     - in: path
@@ -72,6 +74,8 @@ paths:
       responses:
         '200':
           description: Connection
+      operationId: getExternalConnectionsByConnectionId
+      x-operation-id-source: derived
     delete:
       tags:
       - Connectors
@@ -79,6 +83,8 @@ paths:
       responses:
         '204':
           description: Deleted
+      operationId: deleteExternalConnectionsByConnectionId
+      x-operation-id-source: derived
   /external/connections/{connection-id}/schema:
     parameters:
     - in: path
@@ -93,6 +99,8 @@ paths:
       responses:
         '200':
           description: Schema
+      operationId: getExternalConnectionsByConnectionIdSchema
+      x-operation-id-source: derived
     patch:
       tags:
       - Connectors
@@ -100,6 +108,8 @@ paths:
       responses:
         '202':
           description: Update accepted
+      operationId: patchExternalConnectionsByConnectionIdSchema
+      x-operation-id-source: derived
 components:
   securitySchemes:
     oauth2:

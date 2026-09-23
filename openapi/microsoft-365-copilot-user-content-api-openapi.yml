@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: Microsoft 365 Copilot (Microsoft Graph) Connectors User Content API
+  title: Microsoft 365 Copilot (Microsoft Graph) User Content API
   description: 'Microsoft 365 Copilot is built on Microsoft Graph and external content
 
     ingestion via Microsoft 365 Copilot connectors (formerly Microsoft Graph
@@ -13,9 +13,7 @@ info:
 
     such as mail/events/files), Copilot connectors and external items, and
 
-    Microsoft Search query. Authentication is via Microsoft Entra ID OAuth 2.0.
-
-    '
+    Microsoft Search query. Authentication is via Microsoft Entra ID OAuth 2.0.'
   version: '1.0'
   contact:
     name: Microsoft Graph / Copilot
@@ -38,6 +36,8 @@ paths:
       responses:
         '200':
           description: User profile
+      operationId: getMe
+      x-operation-id-source: derived
   /me/messages:
     get:
       tags:
@@ -46,6 +46,8 @@ paths:
       responses:
         '200':
           description: Messages
+      operationId: getMeMessages
+      x-operation-id-source: derived
   /me/events:
     get:
       tags:
@@ -54,6 +56,8 @@ paths:
       responses:
         '200':
           description: Events
+      operationId: getMeEvents
+      x-operation-id-source: derived
   /me/drive/root/children:
     get:
       tags:
@@ -62,6 +66,8 @@ paths:
       responses:
         '200':
           description: Drive items
+      operationId: getMeDriveRootChildren
+      x-operation-id-source: derived
 components:
   securitySchemes:
     oauth2:
