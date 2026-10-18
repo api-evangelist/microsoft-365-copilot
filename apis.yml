@@ -92,7 +92,7 @@ apis:
   baseURL: https://{resource-name}.openai.azure.com/
   tags:
   - Artificial Intelligence
-  - Azure
+  - Microsoft Azure
   - GPT
   - Language Models
   - Machine Learning
