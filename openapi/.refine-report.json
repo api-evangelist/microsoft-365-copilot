@@ -1,26 +1,19 @@
 {
   "provider": "microsoft-365-copilot",
   "sources": [
-    "_original/microsoft-365-copilot-openapi.yml"
+    "_original/microsoft-365-copilot-openapi.json"
   ],
   "outputs": [
-    "microsoft-365-copilot-connectors-api-openapi.yml",
-    "microsoft-365-copilot-external-items-api-openapi.yml",
-    "microsoft-365-copilot-search-api-openapi.yml",
-    "microsoft-365-copilot-user-content-api-openapi.yml"
+    "microsoft-365-copilot-webapps-api-openapi.yml"
   ],
   "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
     "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
-    "microsoft-365-copilot-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
-    "apis.yml register: already-registered"
+    "microsoft-365-copilot-openapi.json: upgraded swagger 2.0 -> OpenAPI 3.2.0",
+    "microsoft-365-copilot-openapi.json: declared missing tag: WebApps",
+    "apis.yml register: written (+1 apis, 4 total)"
   ],
-  "skipped": [
-    "microsoft-365-copilot-connectors-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "microsoft-365-copilot-external-items-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "microsoft-365-copilot-search-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "microsoft-365-copilot-user-content-api-openapi.yml: previously refined output, superseded by openapi/_original/"
-  ]
+  "skipped": []
 }
