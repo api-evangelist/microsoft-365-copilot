@@ -1,4 +1,4 @@
-# Microsoft 365 Copilot (microsoft-365-copilot)
+# Microsoft 365 Copilot
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,137 +66,167 @@
 
 Microsoft 365 Copilot is an AI-powered productivity tool that combines large language models (LLMs) with Microsoft 365 apps and business data to enhance creativity, productivity, and skills across Microsoft 365 applications.
 
-**APIs.json:** [https://www.microsoft.com/en-us/microsoft-365/copilot/apis.json](https://www.microsoft.com/en-us/microsoft-365/copilot/apis.json)
+**Areas:** Artificial Intelligence · Copilot · Enterprise · LLM · Microsoft 365 · Natural Language Processing · Productivity
 
-## Tags
+## Microsoft 365 Copilot on APIs.io
 
-- Artificial Intelligence
-- Copilot
-- Enterprise
-- LLM
-- Microsoft 365
-- Natural Language Processing
-- Productivity
+Everything profiled for Microsoft 365 Copilot is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/microsoft-365-copilot/](https://apis.io/providers/microsoft-365-copilot/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (7)
 
-- **Created:** 2024-01-15
-- **Modified:** 2026-05-19
+- [Microsoft Copilot Studio API](https://apis.io/apis/microsoft-365-copilot/microsoft-copilot-studio-api/) — Microsoft Copilot Studio allows developers to create, customize, and extend Copilot experiences with custom plugins and connectors to integrate…
+- [Microsoft 365 Copilot Extensibility API](https://apis.io/apis/microsoft-365-copilot/microsoft-365-copilot-extensibility-api/) — API for extending Microsoft 365 Copilot with custom skills, plugins, and connectors to integrate third-party services and enterprise data sources.
+- [Azure OpenAI Service API](https://apis.io/apis/microsoft-365-copilot/azure-openai-service-api/) — Azure OpenAI Service provides REST API access to OpenAI's language models, which power Microsoft 365 Copilot's AI capabilities with enterprise-grade…
+- [Microsoft 365 Copilot Connectors API](https://apis.io/apis/microsoft-365-copilot/microsoft-365-copilot-connectors-api/) — The Connectors API from Microsoft 365 Copilot — 3 operation(s) for connectors.
+- [Microsoft 365 Copilot External Items API](https://apis.io/apis/microsoft-365-copilot/microsoft-365-copilot-external-items-api/) — The External Items API from Microsoft 365 Copilot — 1 operation(s) for external items.
+- [Microsoft 365 Copilot Search API](https://apis.io/apis/microsoft-365-copilot/microsoft-365-copilot-search-api/) — The Search API from Microsoft 365 Copilot — 1 operation(s) for search.
+- [Microsoft 365 Copilot User Content API](https://apis.io/apis/microsoft-365-copilot/microsoft-365-copilot-user-content-api/) — The User Content API from Microsoft 365 Copilot — 4 operation(s) for user content.
 
-## APIs
+### Published properties
 
-### Microsoft Graph API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-The Microsoft Graph API provides access to Microsoft 365 data and services, enabling developers to integrate Copilot functionality with user data, documents, emails, calendar, and more.
+#### Agent skills (31)
 
-- **Human URL:** [https://developer.microsoft.com/en-us/graph](https://developer.microsoft.com/en-us/graph)
-- **Base URL:** `https://graph.microsoft.com/v1.0`
+Agent skills built on the API.
 
-#### Tags
+- [add-action](https://apis.io/agent-skills/microsoft-365-copilot/add-action/)
+- [add-adaptive-card](https://apis.io/agent-skills/microsoft-365-copilot/add-adaptive-card/)
+- [add-generative-answers](https://apis.io/agent-skills/microsoft-365-copilot/add-generative-answers/)
+- [add-global-variable](https://apis.io/agent-skills/microsoft-365-copilot/add-global-variable/)
+- [add-knowledge](https://apis.io/agent-skills/microsoft-365-copilot/add-knowledge/)
+- [add-node](https://apis.io/agent-skills/microsoft-365-copilot/add-node/)
+- [add-other-agents](https://apis.io/agent-skills/microsoft-365-copilot/add-other-agents/)
+- [analyze-evals](https://apis.io/agent-skills/microsoft-365-copilot/analyze-evals/)
+- [chat-directline](https://apis.io/agent-skills/microsoft-365-copilot/chat-directline/)
+- [chat-sdk](https://apis.io/agent-skills/microsoft-365-copilot/chat-sdk/)
+- [chat-with-agent](https://apis.io/agent-skills/microsoft-365-copilot/chat-with-agent/)
+- [clone-agent](https://apis.io/agent-skills/microsoft-365-copilot/clone-agent/)
+- [create-eval](https://apis.io/agent-skills/microsoft-365-copilot/create-eval/)
+- [create-eval-set](https://apis.io/agent-skills/microsoft-365-copilot/create-eval-set/)
+- [detect-mode](https://apis.io/agent-skills/microsoft-365-copilot/detect-mode/)
+- [directline-chat](https://apis.io/agent-skills/microsoft-365-copilot/directline-chat/)
+- [edit-action](https://apis.io/agent-skills/microsoft-365-copilot/edit-action/)
+- [edit-agent](https://apis.io/agent-skills/microsoft-365-copilot/edit-agent/)
+- [edit-triggers](https://apis.io/agent-skills/microsoft-365-copilot/edit-triggers/)
+- [int-patterns](https://apis.io/agent-skills/microsoft-365-copilot/int-patterns/)
+- [int-project-context](https://apis.io/agent-skills/microsoft-365-copilot/int-project-context/)
+- [int-reference](https://apis.io/agent-skills/microsoft-365-copilot/int-reference/)
+- [list-kinds](https://apis.io/agent-skills/microsoft-365-copilot/list-kinds/)
+- [list-topics](https://apis.io/agent-skills/microsoft-365-copilot/list-topics/)
+- [lookup-schema](https://apis.io/agent-skills/microsoft-365-copilot/lookup-schema/)
+- …and 6 more published on APIs.io
 
-- AI
-- Data Integration
-- Microsoft 365
-- Productivity
+#### Agentic access (1)
 
-#### Properties
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Documentation](https://docs.microsoft.com/en-us/graph/overview)
-- [OpenAPI](https://developer.microsoft.com/en-us/graph/docs/concepts/openapi) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Authentication](https://docs.microsoft.com/en-us/graph/auth/)
-- [S D Ks](https://docs.microsoft.com/en-us/graph/sdks/sdks-overview)
-- [Changelog](https://developer.microsoft.com/en-us/graph/changelog)
-- [Postman Collection](collections/microsoft-365-copilot.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-365-copilot.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Microsoft 365 Copilot Agentic Access](https://apis.io/agentic-access/microsoft-365-copilot/microsoft-365-copilot-agentic-access/)
 
-### Microsoft Copilot Studio API
+#### Collections (5)
 
-Microsoft Copilot Studio allows developers to create, customize, and extend Copilot experiences with custom plugins and connectors to integrate business-specific data and workflows.
+Postman and Open Collection request collections.
 
-- **Human URL:** [https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio)
-- **Base URL:** `https://api.powerplatform.com/`
+- [Microsoft 365 Copilot (Microsoft Graph)](https://apis.io/collections/microsoft-365-copilot/open-microsoft-365-copilot/)
+- [Microsoft 365 Copilot (Microsoft Graph) Connectors API](https://apis.io/collections/microsoft-365-copilot/open-microsoft-365-copilot-connectors-api/)
+- [Microsoft 365 Copilot (Microsoft Graph) Connectors External Items API](https://apis.io/collections/microsoft-365-copilot/open-microsoft-365-copilot-external-items-api/)
+- [Microsoft 365 Copilot (Microsoft Graph) Connectors Search API](https://apis.io/collections/microsoft-365-copilot/open-microsoft-365-copilot-search-api/)
+- [Microsoft 365 Copilot (Microsoft Graph) Connectors User Content API](https://apis.io/collections/microsoft-365-copilot/open-microsoft-365-copilot-user-content-api/)
 
-#### Tags
+#### Security (2)
 
-- AI Development
-- Automation
-- Custom Plugins
-- Low Code
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Properties
+- [Microsoft 365 Copilot Authentication](https://apis.io/security/microsoft-365-copilot/microsoft-365-copilot-authentication/)
+- [Microsoft 365 Copilot Domain Security](https://apis.io/security/microsoft-365-copilot/microsoft-365-copilot-domain-security/)
 
-- [Documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/)
-- [Getting Started](https://learn.microsoft.com/en-us/microsoft-copilot-studio/fundamentals-get-started)
-- [Plugin  Development](https://learn.microsoft.com/en-us/microsoft-copilot-studio/copilot-plugins-overview)
-- [Connectors](https://learn.microsoft.com/en-us/connectors/)
-- [Tutorials](https://learn.microsoft.com/en-us/microsoft-copilot-studio/tutorials)
-- [Postman Collection](collections/microsoft-365-copilot.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-365-copilot.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### OAuth scopes (1)
 
-### Microsoft 365 Copilot Extensibility API
+The permissions the API asks for.
 
-API for extending Microsoft 365 Copilot with custom skills, plugins, and connectors to integrate third-party services and enterprise data sources.
+- [Microsoft 365 Copilot Scopes](https://apis.io/scopes/microsoft-365-copilot/microsoft-365-copilot-scopes/)
 
-- **Human URL:** [https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/)
-- **Base URL:** `https://api.microsoft365.com/copilot/v1`
+#### Plans and pricing (1)
 
-#### Tags
+Published plans, tiers and prices.
 
-- Custom Skills
-- Extensibility
-- Integration
-- Plugins
+- [Microsoft 365 Copilot Plans Pricing](https://apis.io/plans/microsoft-365-copilot/microsoft-365-copilot-plans-pricing/)
 
-#### Properties
+#### Rate limits (1)
 
-- [Documentation](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/)
-- [Plugin  Manifest](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/create-plugin)
-- [Teams  Message  Extensions](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/build-message-extensions)
-- [A P I  Plugins](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/api-plugins)
-- [Samples](https://github.com/microsoft/copilot-plugins-samples)
-- [Postman Collection](collections/microsoft-365-copilot.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-365-copilot.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Published request limits.
 
-### Azure OpenAI Service API
+- [Microsoft 365 Copilot Rate Limits](https://apis.io/rate-limits/microsoft-365-copilot/microsoft-365-copilot-rate-limits/)
 
-Azure OpenAI Service provides REST API access to OpenAI's language models, which power Microsoft 365 Copilot's AI capabilities with enterprise-grade security and compliance.
+#### FinOps (1)
 
-- **Human URL:** [https://azure.microsoft.com/en-us/products/ai-services/openai-service](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
-- **Base URL:** `https://{resource-name}.openai.azure.com/`
+What the API costs to run, by operation.
 
-#### Tags
+- [Microsoft 365 Copilot Finops](https://apis.io/finops/microsoft-365-copilot/microsoft-365-copilot-finops/)
 
-- AI
-- Azure
-- GPT
-- Language Models
-- Machine Learning
+## Where to find this API
 
-#### Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [Documentation](https://learn.microsoft.com/en-us/azure/ai-services/openai/)
-- [API Reference](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference)
-- [Quickstart](https://learn.microsoft.com/en-us/azure/ai-services/openai/quickstart)
-- [Pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/)
-- [Models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models)
-- [Postman Collection](collections/microsoft-365-copilot.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/microsoft-365-copilot.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/showcase/copilot-for-microsoft-365)
-- [Portal](https://portal.azure.com/)
-- [Developer  Portal](https://developer.microsoft.com/)
-- [Terms of Service](https://www.microsoft.com/en-us/legal/terms-of-use)
-- [Privacy Policy](https://privacy.microsoft.com/en-us/privacystatement)
+- [Website](https://www.microsoft.com/)
 - [Support](https://support.microsoft.com/)
 - [Blog](https://www.microsoft.com/en-us/microsoft-365/blog/)
-- [Status Page](https://status.azure.com/)
-- [GitHub Organization](https://github.com/microsoft)
-- [Integrations](https://www.microsoft.com/en-us/marketplace)
-- [Agent Skill](https://github.com/microsoft/skills-for-copilot-studio)
+- [Terms of service](https://www.microsoft.com/en-us/legal/terms-of-use)
+- [Privacy policy](https://privacy.microsoft.com/en-us/privacystatement)
+- [GitHub](https://github.com/microsoft)
+- [Status](https://status.azure.com/)
 
-## Maintainers
+## API Evangelist rating
 
-**Email:** support@microsoft.com
-**URL:** https://www.microsoft.com/
+**Kin Score 50.3** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 48.6 |
+| Contract governance | 0.0 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 70.7 |
+| Access clarity | 39.5 |
+
+**Agent readiness 29.0** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | negotiable (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | unknown |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | documented (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 27.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/microsoft-365-copilot/](https://apis.io/providers/microsoft-365-copilot/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Microsoft 365 Copilot: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/microsoft-365-copilot/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
